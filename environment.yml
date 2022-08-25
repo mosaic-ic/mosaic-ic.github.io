@@ -1,0 +1,8 @@
+# Conda environment file for developers
+name: mosaic-ic-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+# Packages required for development
+  - rb-jekyll
