@@ -1,0 +1,6 @@
+name: mosaic-ic-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - rb-jekyll
