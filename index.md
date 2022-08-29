@@ -1,7 +1,7 @@
 ---
 layout: home
 profile_picture:
-  src: /assets/img/profile-pic.jpg
+  src: /assets/img/MOSAIC_logo_transparent.png
   alt: website picture
 ---
 
