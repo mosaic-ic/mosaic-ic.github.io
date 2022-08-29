@@ -6,9 +6,17 @@ categories:
 - learningnotes
 
 ---
-The <b>Modular Open Source Analog IC Design</b> (MOSAIC) bootcamp had a goal to connect all independent parties working on automated analog design frameworks and workflows to "touch base"- to share the ideas and developments that had previously been fragmented and largely independent. 
+The <b>Modular Open Source Analog IC Design</b> (MOSAIC) bootcamp had a goal to connect all independent parties working on automated analog design frameworks and workflows to "touch base"- to share the ideas and developments that had previously been fragmented and largely independent.
 
-Seven student participants:
+Speakers, contributors, and participants travelled to Linz, Austria from all over the world- Germany, US, Philippines, South Korea, Chile, Netherlands including of course people from other cities in Austria.
+
+
+Seven student participants came on the invitation of Dr. Mirjana Videnovic-Misic to participate in the bootcamp. We were introduced to programmatic analog IC design and layout in the hopes of spreading the use of the paradigm in other organizations.
+
+<img src="\images\2022-08-26-13-49-25.png" style="width:75%;margin-left:auto;margin-right:auto;display:block">
+
+Student Participants:
+
 * Hanyang University - NiftyLab Team
    * Taeho Shin (신태호)
    * Seonghyun Park (박성현)
@@ -16,13 +24,9 @@ Seven student participants:
 * University of the Philippines - Microlab Team
    * Ryan Antonio
    * Lawrence Quizon
-* Unibersidad Federico Santa Maria - IC3E Team
+* Unibersidad Federico Santa Maria - AC3E Team
    * Aquiles Viza
    * Kevin Pizarro
-
-<img src="\images\2022-08-26-13-49-25.png" style="width:75%;margin-left:auto;margin-right:auto;display:block">
-
-came to Austria on the invitation of Dr. Mirjana Videnovic-Misic to participate in the bootcamp. We were introduced to programmatic analog IC design and layout in the hopes of spreading the use of the paradigm in other organizations.
 
 Offline Participants:
 
@@ -31,19 +35,20 @@ Offline Participants:
   * Martin Koehler
   * Fatemeh Abbassi
   * Khuram Shehzad
-* Infineon FAT
+  * Hazem Salama
+* Infineon
   * Christoph Sandner
   * Thomas Brandtner
   * Florian Renneke
-  * Matthias Koefferlein
-  * Federico Passerini
-* Thomas Parry (OS Community)
+* OS Community
+  * Matthias Koefferlein (also Infineon)
+  * Thomas Parry
 * Curtis Mayberry (Skyworks)
 * Stephan Gether (CISC)
 * Benjamin Prausch (Fraunhofer)
 * Carinthia University of Applied Sciences
   * Vinayak Hande
-  * Osheen Mechail
+  * Osheen Mikhail
 
 ## Talks
 
@@ -52,7 +57,7 @@ Offline Participants:
 </h1>
 </div>
 <br><br>
-<div style="display:grid; grid-template-columns: 50% 50%; grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh;column-gap:1vh;row-gap:10vh">
+<div style="display:grid; grid-template-columns: 50% 50%; grid-template-rows: 23vh 23vh 23vh 23vh 23vh 23vh 23vh 23vh 23vh 23vh 23vh 23vh;column-gap:1vh;row-gap:13vh">
     <div class="wrapper" style="grid-area:1/2;align-self:center">
     <iframe style="width:100%;height:181px" src="https://www.youtube.com/embed/IzJbVG-FHJc" title="Anagen Motivation | Christoph Sandner | MOSAIC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -116,7 +121,6 @@ Offline Participants:
     <div class="wrapper" style="grid-area:12/2;align-self:center"><iframe style="width:100%;height:181px" src="https://www.youtube.com/embed/5t78kJ991js?list=PLXTGiaUILPlX6tQz377Hqm6DnZw2G7RzS" title="Producing Layout with KLayout session 1 | Matthias Koefferlein | MOSAIC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
-
 <br>
 <br>
 <br>
@@ -125,15 +129,17 @@ Offline Participants:
 
 ### 1. [LAYGO2 inside the MOSAIC Orchestrator](https://gitlab.com/mosaic_group/mosaic_framework/mosaic-laygo2/-/tree/sdf_integration)
 
-#### Aquiles, Ryan, Kevin, Lawrence
+#### Aquiles Viza, Lawrence Quizon, Ryan Antonio, Kevin Pizarro,
 
 In the first week, the students worked on familiarizing themselves with Infineon's MOSAIC Orchestrator by integrating the first fully open-source design flow into it: LAYGO2 + MAGIC VLSI. 
 
-Through the use of the Orchestrator's task-based cache-enabled designs, the LAYGO2 design flow was made to be faster and more automated. Generator code was made more specific, with less overhead to the designer by lifting common calls to templates and grids and design initializations to a superclass.
+Using the Orchestrator's task-based cache-enabled designs allowed the LAYGO2 design to flow faster and be more automated. Lifting common calls to templates and grids and design initializations to a superclass made the generator code more specific with less coding overhead to the designer.
 
 By lifting all PDK-related template calls to the Orchestrator's PDK abstraction, the generator code no longer requires particular knowledge of the PDK to create- also possibly enabling generator codes.
 
-MAGIC was also integrated into the Orchestrator as a registered tool, allowing it to transform LAYGO2 designs into mag files handled hierarchically for every task with caching.
+We also integrated MAGIC VLSI into the Orchestrator as a registered tool, allowing it to transform LAYGO2 designs into mag files handled hierarchically for every task with caching.
+
+![](\images\2022-08-29-21-21-39.png)
 
 ### 2. [FiftyNifty Generators using LAYGO2 and virtuoso_template](https://github.com/Lawrence-lugs/MOSAIC-bootcamp-2022-student-generators)
 
@@ -141,7 +147,7 @@ MAGIC was also integrated into the Orchestrator as a registered tool, allowing i
 
 After that, the students went on creating LAYGO2+SKY130 generators for the basic two-transistor circuits from the FiftyNifty, and some other basic circuits. See repository here.
 
-**LAYGO2**
+**LAYGO2+SKY130**
 
 1. (Nifty 7) Current Mirror (Kevin)
 2. (Nifty 1) Inverter (Lawrence)
@@ -169,7 +175,7 @@ After that, the students went on creating LAYGO2+SKY130 generators for the basic
    * (Nifty 21) Variable Degeneration CS Amp
    * (Nifty 24) PN Bias Voltage Generator
 
-**AnalogBase**
+**AnalogBase+cds_ff_mpt (finfet tech)**
 
 1. (Nifty 1) Inverter, NAND Gate (Taeho)
 2. NOR Gate (Seonghyun)
@@ -178,11 +184,15 @@ After that, the students went on creating LAYGO2+SKY130 generators for the basic
 5. NAND Gate, (Nifty 7, 1) Diff Pair, Inverters (Ryan)
 6. (Nifty 7) Sophisticated Current Mirrors (Kevin)
 
+![](\images\2022-08-29-21-31-19.png)
+
 ### 3. KLayout and LAYGO2 
 
-#### Ryan, Kevin
+#### Ryan Antonio, Kevin Pizarro
 
 By using the LAYGO2 package and framework inside KLayout's scripting environment, students managed to enable KLayout to show previews of LAYGO2 designs and allow it to export to GDS, which may eventually allow a complete LAYGO2 workflow to be automated (say, with the Orchestrator, XSchem and netgen) inside KLayout.
+
+![](\images\2022-08-29-21-07-21.png)
 
 ### 4. The open-source BAG2 Template (Temp Name)
 
@@ -202,15 +212,27 @@ This enables the use of BAG2 with open-source tools paving the way for open-sour
 
 ![](\images\2022-08-25-15-01-13.png)
 
-## Section for testimonies
+## Bootcamp Experiences
 
-* Boosting the ease of use of these documentation-lacking frameworks.
-* Inspired people.
-* For CIDR
-* Cooperation outside the bubble for IC3E
-* Discovering that people want to learn about LAYGO2
-* Different POVs from people with different backgrounds (Digital, Software, Analog only, Layout generation people.)
-* Kinda like a proto-conference on layout generation, for which everyone has different amounts of progress and different approaches and different software. It's a way to remap in the heads of everyone who wants to work on these things.
-* The mosaic orchestrator
-  * Troubles with definition of PDK views
-  * Need both approaches to work in the same kind of environment, instead of mosaic-laygo2-magic and mosaic-analogbase-virtuoso
+Lawrence Quizon
+
+> Before the bootcamp, I tried to learn using these analog generators by myself.  I found that most of them do not have satisfactory documentation, and have very high learning curves. In the bootcamp, since a lot of people with experience using (and developing) these generators firsthand, it very quickly closes the learning curve and gets you ready to use it for your own research.
+> 
+<!-- > For us in Microlab, the reusable analog generation paradigm is a very important tool for IC design research. With the enablement of this paradigm with open-source tools, which is a vision that MOSAIC has, it will also enable a lot of other Philippine universities to use analog generators, fostering cooperation. -->
+>
+> \[The bootcamp\] was kinda like a proto-conference on layout generation, for which everyone has different amounts of progress and different approaches and different software. It's a way to remap the progress in the heads of everyone who wants to work on these things.
+
+Taeho Shin
+
+> I've found that you all are very inspired people, and I'm very glad to have come to this bootcamp and shown you LAYGO2, and also to have learned about AnalogBase and the other analog generation tools. It makes me happy to discovering that people want to learn about LAYGO2.
+
+Aquiles Viza
+
+> This is very important for AC3E, because it is cooperation outside the bubble. It was very interesting to hear different POVs about the tools from people with different backgrounds (Digital, Software, Analog only, Layout generation people.)
+
+## Tutorials and notes
+
+{% assign mosaicdocus = site.pages | where_exp: "item" , "item.path contains 'MOSAIC Bootcamp Documentation/notes'"%}
+{% for page in mosaicdocus %}
+   <h4><a href='{{page.url}}'> {{page.title}} </a></h4>
+{% endfor %}
