@@ -7,7 +7,7 @@ profile_picture:
 
 # MOSAIC
 
-Modular Open Source Analoc Integrated Circuits
+Modular Open Source Analog Integrated Circuits
 
 ## Goals
 
