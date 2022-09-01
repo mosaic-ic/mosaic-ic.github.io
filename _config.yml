@@ -29,8 +29,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  mosaic-ic
 # Build settings
-theme: bay
-#theme: bay_jekyll_theme
+# theme: minima
+theme: bay_jekyll_theme
 plugins:
   - jekyll-feed
 
