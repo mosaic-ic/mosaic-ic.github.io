@@ -30,7 +30,9 @@ twitter_username: jekyllrb
 github_username:  mosaic-ic
 # Build settings
 # theme: minima
-theme: bay_jekyll_theme
+#theme: bay_jekyll_theme
+remote_theme: eliottvincent/bay
+
 plugins:
   - jekyll-feed
 
