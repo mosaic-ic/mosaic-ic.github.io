@@ -19,5 +19,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/jekyll:0-${VARIANT}
 #COPY library-scripts/github-debian.sh /tmp/library-scripts/
 #RUN apt-get update && bash /tmp/library-scripts/github-debian.sh
 
-RUN gem update bundler
+#RUN gem update bundler
 RUN bundle install
