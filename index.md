@@ -20,6 +20,8 @@ Modular Open Source Analog Integrated Circuits
 
 ## Bootcamp
 
+Silicon Austria Labs hosted a boot camp in August 2022 in Linz, Austria.  Participants from more than 10 institutions met to cooperate on open source analog IC design and programmatic design techniques.
+
 <p>
-  You can find the mosaic bootcamp 2022 documentation at <a href="\MOSAIC%20Bootcamp%20Documentation\mosaicdocumain.html"> this link </a>
+  You can find more information on the mosaic bootcamp 2022 at <a href="\MOSAIC%20Bootcamp%20Documentation\mosaicdocumain.html"> this link </a>
 </p>
