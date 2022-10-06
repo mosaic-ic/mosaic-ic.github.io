@@ -39,7 +39,7 @@ plugins:
 footer:
   show_powered_by: true
   contact:
-    - name: Mosaic Group
+    - name: Email
       value: mosaic-ic@googlegroups.com
       link: mailto:mosaic-ic@googlegroups.com
   follow:
